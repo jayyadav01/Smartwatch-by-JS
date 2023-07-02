@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartwatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+        <div class="dial">
+            <div class="grand">
+                <div class="parent">
+                    <div id="time">
+                        <div id="showtoptime">
+                            
+                        </div>
+                        <div id="showtime">
+                            
+                        </div>
+                        <div id="week">
+                            Sunday
+                        </div>
+                        <div class="icon">
+                            <i class="fa-regular fa-comments ic" id="message"></i>
+                            <i class="fa-solid fa-music ic" id="music"></i>
+                            <i class="fa-solid fa-stopwatch ic" id="stopwatch"></i>
+                        </div>
+        
+                        <ul id="lan">
+                            <li id="java">Java</li>
+                            <li id="html">Html</li>
+                            <li id="css">Css</li>
+                        </ul>
+                        <div id="list">
+                            <div id="javatext">
+                                Java is a high-level, class-based, object-oriented programminglanguage 
+                                that is designed to have as few implementation dependencies as possible.
+                            </div>
+                            <div id="htmltext">
+                                Html is the standard markup language for creating web pages.
+                            </div>
+                            <div id="csstext">
+                                Cascading Style Sheets is a style sheet language used for describing the 
+                                presentation of a document written in a markup language such as HTML or XML.
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="musicbox">
+
+                        <audio controls autoplay id="musicplay">
+                        </audio>
+                        
+                        <div id="songlist">
+                            <ul>
+                                <li id="get_low">Get Low</li>
+                                <li id="on_my_way">On my way</li>
+                                <li id="faded">Faded</li>
+                                <li id="lily">Lily</li>
+                                <li id="lean_on">Lean On</li>
+                            </ul>
+                            <ul>
+                                <li>0:20</li>
+                                <li>0:14</li>
+                                <li>0:22</li>
+                                <li>0:28</li>
+                                <li>0:30</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="stopwatchbox">
+                        
+                        <div class="needle">
+                            <span class="digit" id="minute">00</span>
+                            <span>:</span>
+                            <span class="digit" id="second">00</span>
+                            <span>:</span>
+                            <span class="digit" id="count">00</span>
+                        </div>
+                        <div class="button">
+                            <i class="fa-solid fa-rotate-right" id="reset" onclick=reset()></i>
+                            <i class="fa-solid fa-pause" id="start" onclick=start()></i>
+                            <i class="fa-solid fa-stop" id="stop" onclick=stop()></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <script src="../js/script.js"></script>
+</body>
+</html>
